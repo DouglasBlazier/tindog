@@ -4,24 +4,12 @@ font-family: 'Ubuntu', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 /*****************************ELEMENT Selectors*******************************/
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 900;
-  line-height: 1.5;
+body {
+  text-align: center;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 
 p {
@@ -29,17 +17,21 @@ p {
 }
 
 /******************************CLASS Selectors********************************/
-.container-fluid {
-  padding: 3% 15% 7%;
+.big-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
 }
 
-/*******************************ID Selectors**********************************/
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  padding-bottom: 5%;
-  position: relative;
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* Fluid Webpage Padding */
+.container-fluid {
+  padding: 7% 15%;
 }
 
 /* Navigation Bar */
@@ -66,10 +58,25 @@ p {
 .download-button {
   margin: 5% 3% 5% 0;
 }
+
 .download-button-icon {
   padding-right: .375rem;
 }
-/* Title Image */
+
+/* Title */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 5%;
+  position: relative;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 .container-title-image {
   position: relative;
 }
@@ -84,12 +91,15 @@ p {
 /* Features */
 #features {
   background-color: #fff;
-  text-align: center;
-  padding: 7% 15%;
   position: relative;
 }
 
-.features-trio {
+.features-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.features-icon {
   padding: 2rem 2rem;
 }
 
@@ -106,7 +116,6 @@ p {
 #testimonials {
   background-color: #ef8172;
   color: #fff;
-  text-align: center;
 }
 
 .testimonial-image {
@@ -115,14 +124,15 @@ p {
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial-text {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 /* Press Section */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%
 }
 
@@ -134,60 +144,75 @@ p {
 /* Pricing Section */
 #pricing {
   padding: 8%;
-  text-align: center;
 }
 
 .pricing-column {
   padding: 3% 2%;
 }
 
+.pricing-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pricing-text {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 /* Call To Action Section */
 #cta {
   background-color: #ff4c68;
-  text-align: center;
-  padding: 4% 15% 6%;
 }
 
-.cta-header {
+.cta-heading {
   color: #fff;
   font-size: 2.5rem;
+  font-weight: 700;
   padding-bottom: 1%
 }
 
 .cta-download-button {
   margin: 2% 1%;
 }
+
 /* End of Web Page ---- Footer */
 #footer {
-  text-align: center;
   padding: 1%;
 }
+
 .footer-link {
   padding: 30px 10px 40px;
   color: #4d4d4d;
 }
+
 .footer-link:hover {
   color: #000;
 }
-/* Mobile Tablet and Phone Responsive */
+
+/************************************************ Mobile Tablet and Phone Responsive ************************************************/
 @media (max-width: 420px) {
-  h1 {
+
+  /**** ELEMENT Selectors ****/
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+  }
+
+  /**** CLASS Selectors ****/
+  .big-heading {
     font-size: 3.0rem;
     font-weight: 900;
     line-height: 1.5;
   }
-  h2 {
-    font-family: 'Montserrat', sans-serif;
+
+  .section-heading {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.5;
   }
-  h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.375rem;
-    font-weight: 700;
-  }
+
+  /* Title */
   #title {
     text-align: center;
   }
@@ -196,9 +221,40 @@ p {
     transform: rotate(0);
     position: static;
   }
+
+  /* Features */
+  .features-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+
+  /* Testimonials Section */
+  .testimonial-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  /* Pricing Section */
+  .pricing-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .pricing-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+
+  /* Call To Action Section */
+  .cta-heading {
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
 }
 
-@media (max-width: 1028px) and (min-width: 421px){
+@media (max-width: 1028px) and (min-width: 421px) {
   #title {
     text-align: center;
   }
