@@ -249,6 +249,7 @@ p {
 
   /* Call To Action Section */
   .cta-heading {
+    color: #fff;
     font-size: 1.375rem;
     font-weight: 700;
   }
